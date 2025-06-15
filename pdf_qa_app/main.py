@@ -14,7 +14,7 @@ from pydantic import BaseModel
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Or ["http://localhost:5173"] for stricter
+    allow_origins=["https://chat-ur-pdf.vercel.app"],  # Or ["http://localhost:5173"] for stricter
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
