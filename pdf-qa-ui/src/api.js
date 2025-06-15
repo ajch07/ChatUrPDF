@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "https://chaturpdf.onrender.com"; // Replace with your FastAPI endpoint
+const BASE_URL = import.meta.env.REACT_APP_API_URL; // Replace with your FastAPI endpoint
 
 export const uploadPDF = async (file, token) => {
   const formData = new FormData();
